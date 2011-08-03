@@ -1,0 +1,13 @@
+#TeXlipse project settings
+#Wed Aug 03 11:34:08 CEST 2011
+builderNum=2
+outputDir=
+makeIndSty=
+bibrefDir=
+outputFormat=pdf
+tempDir=tmp
+mainTexFile=et2.tex
+outputFile=et2.pdf
+langSpell=en
+markDer=true
+srcDir=
