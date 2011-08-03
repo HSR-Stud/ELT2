@@ -98,6 +98,51 @@
   in dieselbe Richtung zeigen.\\
   \textbf{6)} Im Leiter existiert kein Feld $\Rightarrow D = 0$!
   
+\subsection{Kondensator, Kapazität}
+\paragraph{Kapazitätsberechnung} $\Psi_{Huelle} = D \cdot A = Q \Rightarrow D(r) = \ldots \cdot Q \Rightarrow E(r) \Rightarrow U = \int E(r) \cdot dr \Rightarrow C = \frac{Q}{U}$
+\\
+
+\renewcommand{\arraystretch}{2}
+\begin{tabular}{p{4cm} p{3cm} p{4cm} p{5cm}}
+Plattenkondensator
+	& $\displaystyle C = \frac{\varepsilon A}{d}$
+	& Koaxialkabel (Zylinder)
+	& $\displaystyle C = \frac{2 \pi \varepsilon l}{\ln \frac{r_a}{r_i}}$ \\
+Kugelkondensator
+	& $\displaystyle C = 4 \pi \varepsilon \frac{R_1 R_2}{R_2 - R_1}$ 
+	& Doppelleitung
+	& $\displaystyle C = \frac{\pi \varepsilon l}{\ln \frac{a-r}{r}} \approx 
+\frac{\pi \varepsilon l}{\ln \frac{a}{r}} (l \gg a \gg r)$
+\end{tabular} 
+
+\begin{tabular}[t]{|lllll|}
+	%\caption{Spezielle elektrische Felder}
+	\hline
+	\textbf{Feldtyp}  & Q $\lbrack C \rbrack$ & D $\lbrack C/m^2 \rbrack$ & E
+	$\lbrack \frac{V}{m} \rbrack$ & $\varphi \lbrack V \rbrack$ \\
+	\hline
+	R"umliches & \multirow{2}{*}{$\sigma_1 4 \pi {R_1}^2 $} & $\sigma 
+	\frac{{R_1}^2}{r^2}$ & $\frac{\sigma_1 {R_1}^2}{\epsilon r^2}$ &
+	$<\frac{\sigma_1 {R_1}^2}{\epsilon r}$ \\
+	Zentralfeld & & $\frac{Q}{4\pi r^2}$ & $\frac{Q}{4 \pi \epsilon r^2}$ &
+	$\frac{Q}{4\pi \epsilon r}$\\
+	\hline
+	Zylindrisches & \multirow{2}{*}{$\sigma_1 2 \pi R_1 l$} & $\sigma_1
+	\frac{R_1}{r}$ & $\frac{\sigma_1 R_1}{\epsilon r}$ & $\frac{\sigma_1
+	R_1}{\epsilon}\ln{\frac{R_2}{r}}$\\ Koaxialfeld & & $\frac{Q}{2\pi r l}$ & $\frac{q}{2\pi \epsilon r l}$ &
+	$\frac{q}{2 \pi \epsilon l} \ln{\frac{R_0}{r}}$\\
+	\hline
+	Homogenes & \multirow{2}{*}{$\sigma_1 A$} & $\sigma_1$ &
+	$\frac{\sigma_1}{\epsilon}$ & $\frac{\sigma_1}{\epsilon}(R_0-r)$\\
+	Feld & & $\frac{Q}{A}$ & $\frac{Q}{A \epsilon}$ & $\frac{Q}{A
+	\epsilon}(R_0-r)$\\
+	\hline
+\end{tabular}
+\parbox[t]{4.5cm}{\textbf{Koaxialkabel} \\ \vspace{.2cm} \\
+\includegraphics[width=4cm]{./pics/e-c-koaxialkabel.png}}
+\parbox[t]{4.5cm}{\textbf{Doppelleitung} \\ \vspace{.2cm} \\
+\includegraphics[width=4cm]{./pics/e-c-paralleldraht.png}}
+  
 \subsection{Polarisation und Dielektrika}
 Im Homogenen Feld:
 $$\frac{E_1}{E_2}=\frac{\epsilon_2}{\epsilon_1} $$
