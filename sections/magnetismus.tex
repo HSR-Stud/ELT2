@@ -27,7 +27,9 @@ Magnetische Feldlinien verlaufen ausserhalb eines Magneten vom Nord- zum Südpol
 und sind immer geschlossen.\\ 
 	\begin{tabular}[c]{ | p{5cm} | p{8cm} | p{4cm} | }
 		\hline
-		\textbf{Name} & \textbf{Formel} & \textbf{Einheit}\\    
+		\textbf{Name} & \textbf{Formel} & \textbf{Einheit}\\
+		\hline
+		Permeabilitätskonstante & $\mu_0 = 4 \pi \cdot 10^{-7}$ & $\frac{Vs}{Am}$\\
 		\hline
 		Permeabilität
 		& $\mu = \mu_0 \mu_r = \mu_r 4 \cdot \pi \cdot 10^{-7} \frac{Vs}{Am} = \mu_r 1.2566 \frac{\mu H}{m}=\frac{B}{H}$
@@ -200,6 +202,81 @@ Leiteranordnungen}
   gekoppelt sind.
 \end{tabular}
 
+%%%%%%%%%%
+%%EDIT!!!
+%%%%%%%%%%
+
+\subsection{Der magnetische Kreis}
+
+\subsubsection{Ohne Luftspalt}
+  \begin{tabular}{|l|l|}
+    \hline
+    Magnetische Spannung & $V_m=\Theta=H_{Fe}\cdot l_{Fe}$\\
+    \hline
+    ``Ohmsches'' Gesetz, Polfluss & $\Phi = \frac{V_m}{R_m}$\\
+    \hline
+    Reluktanz & $R_m=\frac{l_{Fe}}{\mu_{Fe}\cdot A_{Fe}}$\\
+    \hline
+    Permeanz & $\Lambda_m = \frac{1}{R_m}$\\
+    \hline
+  \end{tabular}
+  
+\subsubsection{Mit Luftspalt}
+  \begin{tabular}{|l|l|l|l|}
+    \hline
+    & Eisen & Luftspalt & Permanentmagnet \\
+    \hline
+    Widerstand & $R_{Fe}=\frac{l_{Fe}}{\mu_{Fe}\mu_0A_{Fe}}$ & $R_L =
+    \frac{l_{L}}{\mu_0\cdot A_L}$ & \\
+    \hline
+    Fluss $\Phi$ & $ \Phi_{Fe}=B_{Fe} \cdot
+    A_{Fe}$ & $ \Phi_{L}=B_{L}A_{L}$ & $B_{M}\cdot A_{M}$ \\
+    \hline
+    Flussdichte & $ B_{Fe}=\mu_0\mu_{Fe}H_{Fe}$ & $B_L=\mu_0H_L$ &
+    $B_M=\mu_0\mu_MH_M+M$\\
+    \hline
+    magnetische Teilspannung & $V_{mFe}=l_{Fe}\cdot H_{Fe}$ & $V_L = L\cdot H_L$
+    & $V_{M} = l_MH_M$ \\
+    \hline 
+  \end{tabular}
+  $\text{Magnetische Spannung } = \Theta = V_m = V_{Fe}+V_L+V_M = N\cdot I \cong
+  l_M\frac{B_M-M}{\mu_0\mu_M}+lH_L$ \\
+  Eine Streuung mit Faktor $0\le\sigma\le 1$ kann als
+  Widerstand parallel zu $R_L$ angesehen werden: \\
+  $R=\frac{R_{\sigma}\cdot R_{\delta}}{R_{\sigma}+R_{\delta}}$\\
+  Streufluss $\Phi_{\sigma} \approx 5\%\Phi_L $\\
+  Streufaktor $\sigma = \frac{\Phi_{\sigma}}{\Phi}$\\
+  Der Fluss im Luftspalt $\Phi_L $ ändert dann zu $
+  \Phi_{L}=(1-\sigma)B_{L}A_{L} $ \\
+  
+\subsubsection{Arbeitspunkt AP}
+$H^*=\frac{H^*}{1+\frac{l_M}{l_L}\frac{\mu_0H^*}{B^*}}$\\
+$B^*=\frac{\mu_0H^*}{\frac{l_L}{l_M}+\frac{\mu_0H^*}{B^*}}$\\
+$B_{opt}=\frac{1}{2}B^*, H_{opt}=-\frac{1}{2}H^*$\\
+$l_M=\mu_Ml_L$
+
+\subsubsection{Von der Durchflutung $\Theta$ ausgehende Berechnung}
+\begin{minipage}{11cm}
+  \includegraphics[width=11cm]{./pics/magnetischerkreis2.png}
+\end{minipage}
+\hfill
+\begin{minipage}{7cm}
+\begin{tabbing}
+xxx \= \kill  
+1. \> magn. Kreis in linearen und nichtlinearen\\
+   \> Teil aufteilen\\
+2. \> Leerlaufspannung $V_{mLeerlauf}$ und\\
+   \> Kurzschlussfluss $\Phi_k$ bestimmen\\
+3. \> $H^*$ und $B^*$ bestimmen\\
+4. \> $H^*$ und $B^*$ einzeichnen und\\
+   \> Arbeitspunkt $AP$ bestimmen\\
+5. \> $H$ und $B$ im AP herauslesen
+\end{tabbing}
+\end{minipage}
+$$V_{mLeerlauf}=\Theta \qquad \Phi_k=\frac{\Theta}{R_{mL}}=\frac{\Theta \cdot
+\mu_0 \cdot A_L }{l_L} \qquad H^*=\frac{\Theta}{l_{Fe}} \qquad B^*=\frac{\Phi_k}{A_{Fe}}=\frac{\Theta \cdot
+\mu_0 \cdot A_L }{l_L A_{Fe}}=\overbrace{\frac{\mu_0 \cdot
+\Theta}{l_L}}^{A_L=A_{Fe}}$$ 
 \subsection{Kraft im Magnetfled}
 $\vec{B} = \mu_0 \cdot \vec{H}$ homogen, $l=$ Leiterl"ange, $y=$ Abstand zum
 Leiter\\
