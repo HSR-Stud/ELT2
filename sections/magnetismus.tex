@@ -20,9 +20,65 @@ $\quad\boxed{W_m=w_m \cdot V=\frac{1}{2} \cdot B \cdot H \cdot V}$ (homog. Feld)
 	\qquad oder \qquad  F = \frac{1}{2} \cdot B \cdot H \cdot A=\frac{1}{2} \cdot
 	\frac{B^2}{\mu} \cdot A \text{ (für } \mu_{rFe} \gg  \text{ 1)}}$$ }
 
+\subsection{Diverse Formeln bzgl. Magnetismus}
+\begin{tabular}[c]{l l}
+$\text{Hall-Sonde: }$
+&$\text{Kraft auf stromführende Leiter: }$\\ 
+$U_H = \frac{I \cdot B}{e \cdot n_p \cdot h}$
+&$\vec{F_L} = I (\vec{l} \times \vec{B}) \qquad F_L = I \cdot l \cdot B \cdot \sin{\alpha}$\\
+
+Magnetfeld ausserhalb eines langen Leiters:
+&Magnetfeld innerhalb eines geraden, langen Leiters: \\
+$H(r) = \frac{I}{2 \cdot \pi \cdot r}$
+&$H(r) = \frac{I}{2 \pi r} \frac{A_{eingeschlossen}}{A_{total}} = 
+ \frac{I}{2 \pi} \frac{r}{r_a^2}$\\
+Magnetfeld der Zylinderspule:
+&Magnetfeld einer Toroidspule:\\
+$H(r) = \frac{N \cdot I}{l}= \frac{\theta}{l} \qquad l \gg d$
+& $H_{innen}(r) = \frac{N \cdot I}{2 \cdot \pi \cdot r \to l} \qquad H_{aussen}
+= 0$
+\end{tabular}
+Siehe \ref{seich}
+
+\subsection{Kraft im Magnetfled}
+$\vec{B} = \mu_0 \cdot \vec{H}$ homogen, $l=$ Leiterl"ange, $y=$ Abstand zum
+Leiter\\
+\begin{multicols}{3}
+	\subsubsection{Stromkraft I (Motorprinzip)} 
+	
+	\begin{itemize}
+		\setlength{\itemsep}{1pt}
+		\setlength{\parskip}{0pt}
+		\setlength{\parsep}{0pt}
+		
+		\item $F=B \cdot I \cdot l \Leftrightarrow \frac{F}{l}= B \cdot I$\\
+		\item $\vec{F} = -\vec{e} y I \cdot B \cdot l = -\vec{e}yF $
+	\end{itemize}
+	\subsubsection{Stromkraft II (Generatorprinzip)}
+		\begin{itemize}
+		\setlength{\itemsep}{1pt}
+		\setlength{\parskip}{0pt}
+		\setlength{\parsep}{0pt}
+		
+		\item  $U_{ind} = B \cdot l \cdot v$
+	\end{itemize}
+
+	\subsubsection{Reluktanzkraft}
+	\begin{itemize}
+		\setlength{\itemsep}{1pt}
+		\setlength{\parskip}{0pt}
+		\setlength{\parsep}{0pt}
+		
+		\item $F_{l_L} = \frac{B^2 \cdot A}{2\cdot \mu_0} $
+		\item Motorendrehmoment \\ $M = \frac{\mu_0 (I \cdot N)^2 \cdot r \cdot
+		l_Fe}{4 l_L}$
+	\end{itemize}
+\end{multicols}
+
+\subsubsection{Ferromagnetische Stoffe}
+Siehe \ref{ferromagnetische_stoffe}
 
 \subsection{Wichtigste Formeln}
-
 Magnetische Feldlinien verlaufen ausserhalb eines Magneten vom Nord- zum Südpol
 und sind immer geschlossen.\\ 
 	\begin{tabular}[c]{ | p{5cm} | p{8cm} | p{4cm} | }
@@ -119,27 +175,6 @@ und sind immer geschlossen.\\
 		& $r = \frac{m_Q \cdot v}{Q \cdot B}$ \\
 		\hline
 	\end{tabular}
-	
-\subsection{Diverse Formeln bzgl. Magnetismus}
-\begin{tabular}[c]{l l}
-$\text{Hall-Sonde: }$
-&$\text{Kraft auf stromführende Leiter: }$\\ 
-$U_H = \frac{I \cdot B}{e \cdot n_p \cdot h}$
-&$\vec{F_L} = I (\vec{l} \times \vec{B}) \qquad F_L = I \cdot l \cdot B \cdot \sin{\alpha}$\\
-
-Magnetfeld ausserhalb eines langen Leiters:
-&Magnetfeld innerhalb eines geraden, langen Leiters: \\
-$H(r) = \frac{I}{2 \cdot \pi \cdot r}$
-&$H(r) = \frac{I}{2 \pi r} \frac{A_{eingeschlossen}}{A_{total}} = 
- \frac{I}{2 \pi} \frac{r}{r_a^2}$\\
-Magnetfeld der Zylinderspule:
-&Magnetfeld einer Toroidspule:\\
-$H(r) = \frac{N \cdot I}{l}= \frac{\theta}{l} \qquad l \gg d$
-& $H_{innen}(r) = \frac{N \cdot I}{2 \cdot \pi \cdot r \to l} \qquad H_{aussen}
-= 0$
-\end{tabular}
-
-Siehe \ref{seich}
 
 \subsection{Zusammenstellung magnetischer Grössen für spezielle
 Leiteranordnungen}
@@ -190,12 +225,8 @@ Leiteranordnungen}
   gekoppelt sind.
 \end{tabular}
 
-%%%%%%%%%%
-%%EDIT!!!
-%%%%%%%%%%
-
 \subsection{Der magnetische Kreis}
-
+\begin{multicols}{2}
 \subsubsection{Ohne Luftspalt}
   \begin{tabular}{|l|l|}
     \hline
@@ -208,7 +239,14 @@ Leiteranordnungen}
     Permeanz & $\Lambda_m = \frac{1}{R_m}$\\
     \hline
   \end{tabular}
-  
+
+	\subsubsection{Arbeitspunkt AP}
+	$H^*=\frac{H^*}{1+\frac{l_M}{l_L}\frac{\mu_0H^*}{B^*}}$\\
+	$B^*=\frac{\mu_0H^*}{\frac{l_L}{l_M}+\frac{\mu_0H^*}{B^*}}$\\
+	$B_{opt}=\frac{1}{2}B^*, H_{opt}=-\frac{1}{2}H^*$\\
+	$l_M=\mu_Ml_L$ 
+\end{multicols}
+ 
 \subsubsection{Mit Luftspalt}
   \begin{tabular}{|l|l|l|l|}
     \hline
@@ -237,12 +275,6 @@ Leiteranordnungen}
   Der Fluss im Luftspalt $\Phi_L $ ändert dann zu $
   \Phi_{L}=(1-\sigma)B_{L}A_{L} $ \\
   
-\subsubsection{Arbeitspunkt AP}
-$H^*=\frac{H^*}{1+\frac{l_M}{l_L}\frac{\mu_0H^*}{B^*}}$\\
-$B^*=\frac{\mu_0H^*}{\frac{l_L}{l_M}+\frac{\mu_0H^*}{B^*}}$\\
-$B_{opt}=\frac{1}{2}B^*, H_{opt}=-\frac{1}{2}H^*$\\
-$l_M=\mu_Ml_L$
-
 \subsubsection{Von der Durchflutung $\Theta$ ausgehende Berechnung}
 \begin{minipage}{11cm}
   \includegraphics[width=11cm]{./pics/magnetischerkreis2.png}
@@ -265,40 +297,3 @@ $$V_{mLeerlauf}=\Theta \qquad \Phi_k=\frac{\Theta}{R_{mL}}=\frac{\Theta \cdot
 \mu_0 \cdot A_L }{l_L} \qquad H^*=\frac{\Theta}{l_{Fe}} \qquad B^*=\frac{\Phi_k}{A_{Fe}}=\frac{\Theta \cdot
 \mu_0 \cdot A_L }{l_L A_{Fe}}=\overbrace{\frac{\mu_0 \cdot
 \Theta}{l_L}}^{A_L=A_{Fe}}$$ 
-\subsection{Kraft im Magnetfled}
-$\vec{B} = \mu_0 \cdot \vec{H}$ homogen, $l=$ Leiterl"ange, $y=$ Abstand zum
-Leiter\\
-\begin{multicols}{3}
-	\subsubsection{Stromkraft I (Motorprinzip)} 
-	
-	\begin{itemize}
-		\setlength{\itemsep}{1pt}
-		\setlength{\parskip}{0pt}
-		\setlength{\parsep}{0pt}
-		
-		\item $F=B \cdot I \cdot l \Leftrightarrow \frac{F}{l}= B \cdot I$\\
-		\item $\vec{F} = -\vec{e} y I \cdot B \cdot l = -\vec{e}yF $
-	\end{itemize}
-	\subsubsection{Stromkraft II (Generatorprinzip)}
-		\begin{itemize}
-		\setlength{\itemsep}{1pt}
-		\setlength{\parskip}{0pt}
-		\setlength{\parsep}{0pt}
-		
-		\item  $U_{ind} = B \cdot l \cdot v$
-	\end{itemize}
-
-	\subsubsection{Reluktanzkraft}
-	\begin{itemize}
-		\setlength{\itemsep}{1pt}
-		\setlength{\parskip}{0pt}
-		\setlength{\parsep}{0pt}
-		
-		\item $F_{l_L} = \frac{B^2 \cdot A}{2\cdot \mu_0} $
-		\item Motorendrehmoment \\ $M = \frac{\mu_0 (I \cdot N)^2 \cdot r \cdot
-		l_Fe}{4 l_L}$
-	\end{itemize}
-\end{multicols}		
-
-\subsubsection{Ferromagnetische Stoffe}
-Siehe \ref{ferromagnetische_stoffe}
