@@ -70,6 +70,12 @@
   Kapazität
     & $C = \frac{Q}{U}$
     & $[C] = F = \frac{C}{V} = \frac{As}{V}$ \\
+  Kondensatoren in Serie
+  	& $\frac{1}{C} = \frac{1}{C_1} + \frac{1}{C_2} + \ldots \qquad C =
+  	\frac{C_1C_2}{C_1+C_2}$ & \\
+  Kondensatoren parallel
+    & $C = C_1 + C_2 + \ldots$
+    & \\
     \hline
   Flächenladungsdichte
     & $\sigma = \frac{Q}{A}$
@@ -142,6 +148,25 @@ Kugelkondensator
 \includegraphics[width=4cm]{./pics/e-c-koaxialkabel.png}}
 \parbox[t]{4.5cm}{\textbf{Doppelleitung} \\ \vspace{.2cm} \\
 \includegraphics[width=4cm]{./pics/e-c-paralleldraht.png}}
+
+\subsubsection{Plattenkondensator mit mehreren Dielektrika}
+Grundsätzlich kann gerechnet werden wie mit parallelen oder seriellen
+Kondensatoren! Beispiel mit Luft und Dielektrika $\varepsilon_r$:
+\\
+\begin{tabular}{ll}
+ Kapazität: &
+$
+\left.
+\begin{aligned}
+C_1 &= \frac{\varepsilon A}{d} = \frac{\varepsilon_0 A}{d-d_1} \\
+C_2 &= \frac{\varepsilon A}{d} = \frac{\varepsilon_0 \varepsilon_r A}{d_1} 
+\end{aligned}
+\right\}
+\quad C= \frac{C_1C_2}{C_1+C_2}
+$ \\
+\end{tabular}
+\parbox{6.5cm}{\includegraphics[width=6cm]{./pics/kond2dielekt.png}} \\
+
   
 \subsection{Polarisation und Dielektrika}
 \begin{tabular}{ll}
@@ -180,10 +205,13 @@ Im Kondensator gespeicherte Energie: $\qquad W = \frac{1}{2} \cdot C \cdot U^2 =
   Die Kraft berechnet sich mittels dem \textbf{Prinzip der virtuellen Verschiebung}. \\ \\
   $\qquad F = F_{mech} = \left| \frac{\Delta W}{\Delta d} \right| \qquad$ 
   $\Delta W = \frac{1}{2} \varepsilon \cdot E^2 \cdot A \cdot \Delta d \quad
-  \Rightarrow \quad F = \frac{1}{2} \varepsilon \cdot E^2 \cdot A = \frac{1}{2} \varepsilon \cdot \frac{U^2}{d^2} \cdot A$ \\
-  $$ F = \frac{1}{2} \cdot U^2 \cdot \frac{\Delta C}{\Delta d}, \text{ (für U =
-  const.)} \qquad \text{ oder } \qquad F = \frac{1}{2} \cdot Q^2 \cdot
+  \Rightarrow \quad F = \frac{1}{2} \varepsilon \cdot E^2 \cdot A = \frac{1}{2}
+  \varepsilon \cdot \frac{U^2}{d^2} \cdot A$ \\ $$ F =
+  \frac{1}{2} \cdot U^2 \cdot \frac{\Delta C}{\Delta d}, \text{ (für U = const.)} \qquad \text{ oder } \qquad F = \frac{1}{2} \cdot Q^2 \cdot
   \frac{\mathrm d}{\Delta d} \left( \frac{1}{C} \right), \text{ (für Q =
-  const.)}$$ \\ }
+  const.)}$$ \\
+  Die Formel $F = \frac{1}{2}\varepsilon \cdot E^2 \cdot A$ gilt auch für
+  Kondensatoren mit mehreren Dielektrika. Dazu wird einfach ein bekanntes
+  $\varepsilon$ mit dem zugehörigen $E$ verwendet.}
   
   
