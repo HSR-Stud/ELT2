@@ -1,0 +1,31 @@
+\newcommand{\titleinfo}{Zusammenfassung ELT2}
+\newcommand{\authorinfo}{Roman Koller, Fabian Braun, Lukas Schmid, Ueli Giger,
+Elias Ammann, S. K\"orner, C. Gwerder, A. Waldvogel}
+\newcommand{\versioninfo}{$Revision: 218 $ - powered by \LaTeX}
+%$Id: El2.tex 218 2012-08-13  cgwerder $
+
+% standard header
+\include{header} 
+% header.tex nicht editieren (Projekt LaTeX-Header benutzen)
+\usepackage{multicol}
+
+%Eigene Kommandos
+\newcommand{\skriptsection}[2]{\section{#1 {\tiny Skript S. #2}}}
+\newcommand{\skriptsubsection}[2]{\subsection{#1 {\tiny Skript S. #2}}}
+\newcommand{\hervor}[1]{\text{\textbf{\textcolor{red}{#1}}}}  % für farben
+\newcommand{\formel}[1]{\begin{equation}#1\end{equation}} % für formeln
+
+\begin{document}
+
+
+\input{sections/elektrostatik}
+\input{sections/magnetismus}
+
+\begin{center}
+	\includegraphics[width=11cm]{./bilder/vergleich_elfeld_strfeld.png}\\ \vspace{1cm}
+	\includegraphics[width=11cm]{./bilder/vergleich_elkreis_magkreis.png}
+\end{center}
+
+
+
+\end{document}
