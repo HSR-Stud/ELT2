@@ -1,6 +1,6 @@
-/et.synctex.gz
-/et2.aux
-/et2.log
-/et2.pdf
-/et2.synctex.gz
+*.synctex.gz
+*.aux
+*.log
+*.pdf
+*.synctex.gz
 /tmp
